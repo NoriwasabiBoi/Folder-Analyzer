@@ -2,18 +2,16 @@
 
 Hallo Karsten,
 
-hier einmal der Code für die Aufgabe.
+anbei findest Du den Code für die Aufgabe.
 
-Das tool kannst Du benutzen, indem Du der iterate_folder() function in folder_analyzer den Pfad zu dem Ordner gibst, den Du analysieren möchtest.
-Das ganze liefert dann basierend auf der Struktur, die Du mir geschickt hattest, ein Dictionary mit den Keys passend zu den verschiedenen Klassentypen, deren Values jeweils eine Liste aus Instanzen der jeweiligen Klassen sind. 
-Ich dachte mir, dass das praktisch wäre, wenn es mehrere Ordner gibt, die USD files der gleichen Klasse besitzen, und die Klassen nach Klassentyp sortiert sind.
+Das Tool kannst Du ganz einfach nutzen, indem Du der Funktion iterate_folder() aus folder_analyzer den Pfad zu dem Ordner übergibst, den Du analysieren möchtest.
+Die Funktion liefert dann, basierend auf der Struktur, die Du mir geschickt hattest, ein Dictionary zurück. Die Keys entsprechen dabei den verschiedenen Klassentypen, und die Values sind jeweils Listen mit Instanzen der jeweiligen Klassen.
+Ich fand das sinnvoll, gerade wenn es mehrere Ordner gibt, die USD-Dateien der gleichen Klasse enthalten, und die Klassen sortiert nach Typ vorliegen.
 
-Um zum Beispiel die manifest() Methode bei einer StichClip instanz zu benutzen, hätte ich das so geschrieben: 
+Möchtest Du beispielsweise die manifest()-Methode einer StichClip-Instanz aufrufen, kannst Du das so machen:
 
-dict = iterate_folder(folder_path)
-<br>
-print(dict["StichClip"][0].manifest())
+folder_data = iterate_folder(folder_path)
+print(folder_data["StichClip"][0].manifest())
 
-Liebe Grüße,
-
+Viele Grüße
 Robin :)
