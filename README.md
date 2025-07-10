@@ -11,6 +11,7 @@ Ich fand das sinnvoll, gerade wenn es mehrere Ordner gibt, die USD-Dateien der g
 Möchtest Du beispielsweise die manifest()-Methode einer StichClip-Instanz aufrufen, kannst Du das so machen:
 
 folder_data = iterate_folder(folder_path)
+<br>
 print(folder_data["StichClip"][0].manifest())
 
 Viele Grüße
