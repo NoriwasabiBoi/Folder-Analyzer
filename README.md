@@ -11,6 +11,7 @@ Ich dachte mir, dass das praktisch wäre, wenn es mehrere Ordner gibt, die USD f
 Um zum Beispiel die manifest() Methode bei einer StichClip instanz zu benutzen, hätte ich das so geschrieben: 
 
 dict = iterate_folder(folder_path)
+\n
 print(dict["StichClip"][0].manifest())
 
 Liebe Grüße,
