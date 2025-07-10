@@ -9,7 +9,8 @@ if current_dir not in sys.path:
 
 import classes
 
-folder_path = "L:/rauchertofu/00_pipeline/scripts/mac/files"
+# SET PATH HERE
+folder_path = "PATH/TO/FOLDER"
 
 def analyze_folder(subfolder):
     """
@@ -88,7 +89,6 @@ def iterate_folder(path):
         class_object = analyze_folder(subfolder=subfolder)
         contents[class_object.type].append(class_object)
     return contents
-        
-dict = iterate_folder(folder_path)
 
-print(dict["StichClip"][0].manifest())
+dict = iterate_folder(folder_path)
+# use dict elements to get the required information
