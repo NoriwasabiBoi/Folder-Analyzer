@@ -14,5 +14,6 @@ folder_data = iterate_folder(folder_path)
 <br>
 print(folder_data["StichClip"][0].manifest())
 
-Viele Grüße
+Viele Grüße,
+<br>
 Robin :)
